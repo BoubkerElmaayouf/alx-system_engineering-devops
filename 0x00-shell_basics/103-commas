@@ -1,3 +1,0 @@
-#!/bin/bash
-ls -1AF | sed ':a;N;$!ba;s/\n/, /g' ; echo
-
