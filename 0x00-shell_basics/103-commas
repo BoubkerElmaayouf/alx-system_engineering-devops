@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -1Ap | awk '{printf "%s,",$0}' | sed 's/,$/\n/' | sed 's/^/.\//; 2s/^/../'
+ls -1Ap | awk '{printf "%s,", $0}' | awk '{gsub(/,$/, ""); print}' | awk '{if (NR==1) print "./"$0; else if (NR==2) print "../"; else print $0"/"}'
