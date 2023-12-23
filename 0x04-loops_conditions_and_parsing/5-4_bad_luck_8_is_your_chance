@@ -15,5 +15,5 @@ do
 		echo "Best School"
 	fi
 
-	((counter++))
+	(( counter++ ))
 done
