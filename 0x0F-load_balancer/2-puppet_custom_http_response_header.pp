@@ -1,4 +1,4 @@
-# instal and configure nginx
+# instaling  and configuring nginx
 exec {'update':
   command => '/usr/bin/apt-get update',
 }
